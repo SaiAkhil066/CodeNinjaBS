@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style type="text/css">
+        .d-flex {
+            margin-left: 350px;
+        }
+
+        .container-fluid {
+            height: 30px;
+        }
+
+        .nav-item {
+            margin-left: 20px;
+        }
+
+        body {
+            background-image: url('bg1.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+
+
+        }
+    </style>
+    <title>CodeNinja!</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-black">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/v1490942522/tirnqs0zeftudroq1ki6.png"
+                    alt="" width="30" height="24" class="d-inline-block align-text-top">
+                <b style="color: honeydew;">CodeNinja</b>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <li class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/" style="color: honeydew;">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/about.html" style="color: honeydew;">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: honeydew;">
+                            Topics
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Technology">Technology</a></li>
+                            <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/Web_development">Web Dev</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="/support.html">Support</a></li>
+                            <li><a class="dropdown-item" href="/Writeforus.html">Write For Us</a></li>
+
+                        </ul>
+                    </li>
+            </li>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/contact.html" style="color: honeydew;">Contact Us</a>
+            </li>
+
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search about.." aria-label="Search">
+                &nbsp;
+                <button type="button" class="btn btn-outline-danger"
+                    style="color: black; border-radius: 70px; border: none; color: honeydew;">Search</button>
+            </form>
+            <div class="mx-2">
+                <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#loginModal">Login</button>
+                <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#signupModal">Signup</button>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+
+    <!-- login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login like a CodeNinja</h5>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Sognup Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Signup like a CodeNinja</h5>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="cexampleInputPassword1">
+                        </div>
+                       
+                        <button type="submit" class="btn btn-primary">Create Account</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <div style="margin-top: 3px;">
+
+        <div id="carouselExampleDark" class="carousel slide" data-ride="carousel">
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="123.jpg" width="1110px" height="420px" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Welcome to CodeNinja!</h5>
+                        <p>Technology News, Development and Trends.</p>
+                        <a href="https://en.wikipedia.org/wiki/Technology"><button class="btn btn-danger btn-sm" >Technology</button></a>
+                        <a href="https://en.wikipedia.org/wiki/Web_development"><button class="btn btn-primary btn-sm">Web Development</button></a> 
+                        <a href="https://www.visualoak.com/blog/internet-facts/#:~:text=There%20are%204.57%20billion%20Internet,in%20India%20use%20the%20Internet."><button class="btn btn-success btn-sm">Tech Fun</button></a>
+
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="1234.jpg" width="1110px" height="420px" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>The Best Coding Blog!</h5>
+                        <p>Technology News, Development and Trends.</p>
+                        <a href="https://en.wikipedia.org/wiki/Technology"><button class="btn btn-danger btn-sm" >Technology</button></a>
+                        <a href="https://en.wikipedia.org/wiki/Web_development"><button class="btn btn-primary btn-sm">Web Development</button></a> 
+                        <a href="https://www.visualoak.com/blog/internet-facts/#:~:text=There%20are%204.57%20billion%20Internet,in%20India%20use%20the%20Internet."><button class="btn btn-success btn-sm">Tech Fun</button></a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="12345.jpg" width="1110px" height="420px" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>The Award Winning Blog!</h5>
+                        <p>Technology News, Development and Trends.</p>
+                        <a href="https://en.wikipedia.org/wiki/Technology"><button class="btn btn-danger btn-sm" >Technology</button></a>
+                        <a href="https://en.wikipedia.org/wiki/Web_development"><button class="btn btn-primary btn-sm">Web Development</button></a> 
+                        <a href="https://www.visualoak.com/blog/internet-facts/#:~:text=There%20are%204.57%20billion%20Internet,in%20India%20use%20the%20Internet."><button class="btn btn-success btn-sm">Tech Fun</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <span class="visually-hidden"></span>
+
+
+            <span class="visually-hidden"></span>
+
+        </div>
+    </div>
+
+    <div class="px-4 py-5 my-5 text-center">
+        <img class="d-block mx-auto mb-4"
+            src="data:image/png;base64,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"
+            alt="" width="72" height="77">
+        <h1 class="display-5 fw-bold" style="color: honeydew;">Why to code?</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4" style="color: honeydew;">Outside from the implications of coding which look good on a
+                resume, coding actually does boost skills which are actually useful to most jobs. Problem solving and
+                logic are the main two. Learning to code is like an exercise session for the “left” side of the brain.
+            </p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Code Faster</button>
+                &nbsp;
+                <button type="button" class="btn btn-outline-secondary btn-lg px-4"
+                    style="color: honeydew;">Resources</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <iframe width="600px" height="300px" src="https://www.youtube.com/embed/Dv7gLpW91DM"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+
+
+
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Topics</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contact Us</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Write for Us</a></li>
+        </ul>
+        <p class="text-center text-muted">© 2022 Company, Inc</p>
+    </footer>
+
+
+
+
+
+
+</body>
+
+</html>
